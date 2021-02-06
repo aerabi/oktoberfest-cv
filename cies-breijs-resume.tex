@@ -1,0 +1,267 @@
+%
+% LaTeX source of my resume
+% =========================
+%
+% Heavily commented to to fit even LaTeX beginners (hopefully).
+%
+% See the `README.md` file for more info.
+%
+% This file is licensed under the CC-NC-ND Creative Commons license.
+%
+
+
+% Start a document with the here given default font size and paper size.
+\documentclass[10pt,a4paper]{article}
+
+% Set the page margins.
+\usepackage[a4paper,margin=0.75in]{geometry}
+
+% Setup the language.
+\usepackage[english]{babel}
+\hyphenation{Some-long-word}
+
+% Makes resume-specific commands available.
+\usepackage{resume}
+
+\usepackage{tipa}
+\usepackage{upquote}
+
+
+\begin{document}  % begin the content of the document
+\sloppy  % this to relax whitespacing in favour of straight margins
+
+
+% title on top of the document
+\maintitle{Mohammad-Ali ~A\textquotesingle{}R\^ABI\footnote{Officially (and ambiguously):\ Mohammad Ali ~ARABI.  Lastname:\ A'R\^ABI \textipa{[æPr6:bi]} means nomad, desert-dweller.}}{29. 04. 1991 \ \ \ \ Tehran}{Last update on \today}
+
+\nobreakvspace{0.3em}  % add some page break averse vertical spacing
+
+% \noindent prevents paragraph's first lines from indenting
+% \mbox is used to obfuscate the email address
+% \sbull is a spaced bullet
+% \href well..
+% \\ breaks the line into a new paragraph
+\noindent\href{mailto:aerabi.at.gmx.dot.de}{aerabi\mbox{}@\mbox{}gmx.de}\sbull
+\textsmaller{+}49 176 3569 1988\sbull
+\textsmaller{+}31 6 301 59 402\sbull
+\href{http://aerabi.com}{aerabi.com}\sbull 
+\href{https://orcid.org/0000-0001-7088-417X}{\textsc{orc}i\textsc{d} 0000-0001-7088-417X}
+% {\newnums angellandros} \emph{(Skype)}\sbull
+% \href{http://www.linkedin.com/in/angellandros}{www.linkedin.com/in/angellandros}
+\\
+Emmastraat 72 \sbull
+2595{\sc ek}\thinspace\ {\sc The Hague}\sbull
+South Holland\sbull
+{\sc Netherlands}
+
+\spacedhrule{0.9em}{-0.4em}  % a horizontal line with some vertical spacing before and after
+
+\roottitle{Summary}  % a root section title
+
+\vspace{-1.3em}  % some vertical spacing
+\begin{multicols}{2}  % open a multicolumn environment
+\noindent \emph{%
+% Medior Backend Developer.
+Backend Software Developer.
+MSc in Computer Science. BSc in Pure Mathematics. Researcher in Machine Learning, Logic, Programming Language Theory, and Geometry.}
+\\
+\\
+At the age of 13 (2004), Mohammad-Ali wrote his first lines of code in \acr{C}, in which language (as well as its successor, \acr{C}++) he coded for the next 9 years. In 2013, he started working as a Java developer and attending the best Iranian university studying Intuitionistic Logic under academic grandson of \href{https://en.wikipedia.org/wiki/L._E._J._Brouwer}{L.E.J.~Brouwer}. In 2015 he started working at CafeBazaar, ``the Iranian Google''.
+% This was the point when the curse began; Mohammad-Ali was cursed by the evil eye to migrate every year: to Switzerland in 2016, to Germany in 2017, to Hollands in 2018, and God knows where next. He is now looking for a way to break the spell and find inner peace.
+In 2016, he accompanied his wife to Geneva, to a post-master study in Mathematical Geometry, at which time he started studying Computer Science at University of Freiburg, and working as a Logician there shortly after. He moved to Freiburg, Germany, in 2017 where he worked as a backend developer for multiple companies, and then to Netherlands in 2018 to work at Picnic.
+% At this point of time the evil eye cursed him; he would leave all these and migrate every year for the rest of his life and shall never find inner peace. That he did: to Switzerland in 2016, to Germany in 2017, to Hollands in 2018, and God knows where next. He is now looking for a way to break the spell, and live happily ever after.
+
+% At the age of 13 (2004), Mohammad-Ali wrote his first lines of code in \acr{C}, developing a graphical file manager and a Pacman game running in \acr{DOS}. Then he started developing more indie games (\textit{e.g.}\ in \acr{C}++) and studying Combinatorics and Informatics, in which fields he would attend a masters 12 years later at University of Freiburg. These studies led him to the academic fields of Pure Mathematics (BSc) and Logic (MSc), then to his first position in Big Data (in Java) after graduation. 
+% With a thirst for study and research in foundations of computer science, he is now doing both in the fields of Programming Languages and Machine Learning.
+% With a few years of experience in web-development, he is now looking forward to deepen his knowledge and experience in a backend position.
+% In 2016, he was working in the best IT company in the country, studying in the best university. But then he travelled to the Europe in late 2016 to deepen his knowledge in Pure Mathematics and Theoretical Computer Science, as well as pursuing his career.
+% At the age of seven (1989) Cies wrote his first lines of code in a \acr{LOGO}-like language on an \acr{MSX} (pre-\acr{PC}).  Two years later he attended a conference on an emerging new technology, the Internet, at the Erasmus University from which he would graduate 16 years later.
+
+% After being introduced to the open source movement in 1997, he taught himself a variety of skills including system administration and programming (Bash, Python, Ruby \& \CPP).  By 2002 he got his pet project \acr{KT}urtle ---a zero-entry-barrier programming environment--- included into \acr{KDE}'s \emph{edu} module, and thereby almost every Linux distribution.
+
+% From 2003 to 2007 he studied at the Erasmus University Rotterdam and graduated in \emph{Business and Computer Science} (one curriculum).  After graduation he travelled Europe and Asia during a two year sabbatical, on which he ``hustled'' several IT gigs (see experiences below) to extend the journey.
+\end{multicols}
+
+
+\spacedhrule{0em}{-0.4em}
+
+\roottitle{Professional Experience}
+
+\headedsection
+  {\href{https://picnic.app/}{Picnic International BV}}
+  {\textsc{Amsterdam, Netherlands}} {%
+  \headedsubsection
+    {Backend Java Developer\footnote{All the positions are 100\% = full-time = 40 hrs/week if not otherwise specified.}}
+    {Jun \apo18 -- Jul \apo19}
+    {\bodytext{Picnic is the first online supermarket with free delivery, delivering in Netherlands and parts of Germany. Creating new Spring atoms for the cross-product platform, bug fix, and (candidate) code review, all in Java 8 and then 11. \#Monolith \#MongoDB \#RabbitMQ \#Docker \#Scrum \#Waterfall \#Rx}}
+}
+
+\headedsection
+  {\href{https://www.uhlmann-solar.de/}{Uhlmann Solarelektronik GmbH}}
+  {\textsc{Teningen, Germany}} {%
+  \headedsubsection
+    {Full-Stack Python Developer (Freelance)}
+    {Jan \apo18 -- Present}
+    {}
+}
+
+\headedsection
+  {\href{https://www.apptec360.com/}{AppTec Services GmbH}}
+  {\textsc{Emmendingen, Germany}} {%
+  \headedsubsection
+    {Full-Stack Developer (50\%)}
+    {Feb \apo18 -- Apr \apo18}
+    {\bodytext{AppTec is a multinational company with offices in Germany and Switzerland, with customers such as Migros, Vodafone, Mitsubishi Motors, and European Union. Worked on the backend of the \href{https://www.emmconsole.com/}{Enterprise Mobility Management Console}, securing the endpoints.}}
+}
+
+\headedsection  % sets the header for the section and includes any subsections
+  {\href{http://www.uni-freiburg.de/}{Albert-Ludwigs-Universität Freiburg}}
+  {\textsc{Freiburg im Breisgau, Germany}} {%
+  \headedsubsection
+    {Coq Developer / Logician (50\%), \href{http://proglang.informatik.uni-freiburg.de}{Programming Languages Lab}}
+    {Feb \apo17 -- Jul \apo18}
+    {\bodytext{Programming Languages Research Group (Arbeitsbereich Programmiersprachen) is directed by Prof.~Dr.~Peter Thiemann. Working remotely and reporting to Peter himself.  In charge of implementing \href{https://mitpress.mit.edu/sites/default/files/titles/content/9780262162289_sch_0001.pdf}{Linear Lambda Calculus} and proving its properties using Coq programming language. \url{https://github.com/angellandros/llc}}}
+    
+  \headedsubsection
+    {Python Developer (50\%), \href{http://www.bioinf.uni-freiburg.de}{Bioinformatics Lab} / \href{https://galaxyproject.org}{Galaxy Project}}
+    {Jun \apo17 -- Sep \apo17}
+    {\bodytext{Galaxy is an open source, web-based platform for data intensive biomedical research. This project is under development by multiple universities in the world, as well as in Freiburg, Bioinformatics Lab, under supervision of Prof.\ Dr.\ Rolf Backofen. Working remotely on \href{https://github.com/bgruening/docker-galaxy-stable}{the Docker version of the project}, reporting to Björn Grüning, the head of \href{http://www.bioinf.uni-freiburg.de/Galaxy/index.html}{Freiburg Galaxy Team}.}}
+}
+
+\headedsection  % sets the header for a subsection and contains usually body text
+  {\href{https://en.wikipedia.org/wiki/Cafe_Bazaar}{Cafe Bazaar} (Officially:\ Âvây e Hamrâh e Hušmand e Hezârdastân)}
+  {\textsc{Tehran, Iran}} {%
+  \headedsubsection
+    {HR Software Consultant and Developer}
+    {Apr \apo16 -- Sep \apo16}
+    {\bodytext{In charge of developing tools for the internal use:\ automating hiring processes, extracting statistics from the recruitment applications, etc. Managed Hackathons, Techtalks, and teaching classes. Provided learning materials for new recruits. Negotiated with Lever, GreenHouse, Workable, and other ATS companies. Also, taught Middle Persian to my fellow colleagues.}}
+    
+    \headedsubsection
+    {Senior Backend Python Developer, \href{https://divar.ir/}{Divar Project}}
+    {Jan \apo16 -- Apr \apo16}
+    {\bodytext{Divar is a classified ads website, with some half a million new ads per day (at the time), now having national Alexa rank of 11 and 25 million users. Worked on the CI, SEO, backend, design, etc. Deployed on 12 servers on a local data center. \#Django \#PostgreSQL \#Memcached \#NGINX \#Scrum}}
+    
+    \headedsubsection
+    {Senior Backend Python Developer, \href{https://cafebazaar.ir/}{Cafe Bazaar Search Project}}
+    {Aug \apo15 -- Jan \apo16}
+    {\bodytext{In charge of initializing the CI module, installing new monitors (Sentry, ManageEngine Application Manager, Munin), developing frontend components, and writing unit tests. Initialized the keyword extraction module. Initialized the autocomplete module. \#ElasticSearch \#Docker}}
+}
+
+\headedsection
+  {\href{http://mitrc.ir}{Mobin Information Technology Research Center}}
+  {\textsc{Tehran, Iran}} {%
+
+  \headedsubsection
+    {Senior Java / Big Data Engineer, Intelligent News Analysis System}
+    {Jan \apo15 -- Sep \apo15}
+    {\bodytext{In charge of design and develop a distributed platform (using Apache Storm, Hadoop, Solr, ZooKeeper, Memcached, HDFS, PostgreSQL, Kafka, Kestrel, etc.),~collaborating with other developers to understand their needs and to verify scalability of their codes, and to test the project after each modification, by deploying it on a 4-node test cluster. Tested the project for durability and scalability on a 12-node cluster. Developed monitoring tools (using JMX, ZooKeeper, and Servelet).}}
+    
+  \headedsubsection
+    {Java / Big Data Developer (70\%), Intelligent News Analysis System}
+    {Sep \apo13 -- Jan \apo15}
+    {\bodytext{Studied Apache Spark and Apache Storm, and reported to the project manager. Contributed to design and development of the distributed infrastructure, especially in the Storm part.}}
+    
+  \headedsubsection
+    {Part-time Consultant and Developer, Persian Text Corpus Project}
+    {Sep \apo13 -- Sep \apo15}
+    {\bodytext{Contributed to the early design. Developed tools for computer-aided translation. Developed web-based visualization module using JS (for displaying relation trees). \#JS \#PHP \#Scala}}
+}
+
+\headedsection
+  {\href{http://cafco.ir/}{Idea Creation House (\textsc{Cafco})}}
+  {\textsc{Tehran, Iran}} {%
+  \headedsubsection
+    {Full-Stack Software Designer and Developer (Project-based)}
+    {Sep \apo12 -- Sep \apo15}
+    {\bodytext{\textsc{Cafco} is a company working in new methods of education. In charge of design and develop web-apps, monitor them, and debug remotely, especially while in use. \#PHP \#Android \#HTML \#JQuery}} 
+    % Developed a full gamified educational web-site (with Quiz, XP, badge system, etc.)\ using PHP and JQuery. Developed a competition management system with web and Android clients. Developed a stock exchange simulator. Co-designed a full mathematical competition event.}}
+}
+
+% \headedsection
+%   {\href{}{Aži Dahāka Game Studio}}
+%   {\textsc{Tehran, Iran}} {%
+%   \headedsubsection
+%     {Founder and Developer}
+%     {Sep \apo05 -- Sep \apo15}
+%     {\bodytext{Developing half a dozen award-winning games, using Cry\textsc{Engine}, Unity3D, Irrlich Engine, etc.}}
+% }
+
+\vspace{-0.2em}
+\begin{center}
+  \emph{\small Please refer to my \href{http://www.linkedin.com/in/angellandros}{Linked-in profile} for a more complete list of work experiences along with recommendations.}
+\end{center}
+
+\spacedhrule{-0.2em}{-0.4em}
+
+\roottitle{Education}
+
+\headedsection
+  {\href{http://www.uni-freiburg.de/}{Albert-Ludwigs-Universität Freiburg}}
+  {\textsc{Freiburg im Breisgau, Germany}} {%
+  \headedsubsection
+    {MSc in Computer Science (Informatik)}
+    {2016 -- 2019}
+    {\bodytext{Focused on Cyber-Physical Systems (as the specialization), Machine Learning (master project), and Programming Languages (master thesis).}}
+}
+
+\headedsection
+  {\href{http://www.en.sharif.edu/}{Sharif University of Technology}}
+  {\textsc{Tehran, Iran}} {%
+  \headedsubsection
+    {MSc in Pure Mathematics / Logic \textnormal{\textit{~(discontinued)}}}
+    {2013 -- 2015} 
+    {\bodytext{Focused on Intuitionistic Logic and Proof Theory.
+    Supervisor: Mohammad Ardeshir.\\
+    Thesis: Categorial Grammar with Applications in Machine Translation.}}
+}
+
+\headedsection
+  {\href{http://en.sbu.ac.ir/}{Shahid Beheshti University}}
+  {\textsc{Tehran, Iran}} {%
+  \headedsubsection
+    {BSc in Pure Mathematics}
+    {2009 -- 2013} 
+    {\bodytext{Thesis: Distance Transform with Applications (in the fields of Digital Geometry).\\
+    Two medals (bronze and silver) in National Collegiate Mathematics Competition (2011 and 2013), 5th team rank, and admission to International Mathematics Competition for University Students 2013.}}
+}
+
+\headedsection
+  {\href{https://en.wikipedia.org/wiki/National_Organization_for_Development_of_Exceptional_Talents}{National Organization for Development of Exceptional Talents}}
+  {\textsc{Karaj, Iran}} {%
+  \headedsubsection
+    {High-School Diploma \& Pre-University Degree in Mathematics and Physics}
+    {2002 -- 2009} {}
+}
+
+
+\spacedhrule{0.5em}{-0.4em}
+
+\roottitle{Skills}
+
+\inlineheadsection  % special section that has an inline header with a 'hanging' paragraph
+  {Technical expertise:}
+  {Software design and implementation, with(in) a team.  Big fan of continuous integration (GitLab-CI/Jenkins/Travis) and Docker.  Enjoys writing in Python, especially for web-development (\textit{e.g.}\ with Django). Solid knowledge and experience in Java (not liquid), especially from 8 on. In love with Scala (especially with Spark), still keeping \CPP\ dear. Solid knowledge of big data technologies:\ Storm, Spark, Hadoop, ZooKeeper, Memcached, Redis, ElasticSearch, Kafka, Kestrel, ZeroMQ, \textit{et cetera}. Knowledge of the front:\ \acr{HTML+CSS}, \acr{XML}, \acr{REST}, and JavaScript (+ jQuery). Old pal of Ubuntu, Git, and SVN.}
+
+\vspace{0.5em}
+\inlineheadsection
+  {Theoretical knowledge:}
+  {Geometry (\textit{e.g.}~Topology, Computational Algebraic Geometry, Differential Geometry, Digital Geometry, Knot Theory, Topological Quantum Field Theory), Logic (\textit{e.g.}~Proof Theory, Programming Language Theory, Set Theory), Numerics (\textit{e.g.}~Numerical Linear Algebra).}
+  
+\vspace{0.5em}
+\inlineheadsection
+  {Natural languages:}
+  {Persian \emph{(mother tongue)}, English \emph{(full professional proficiency)}, German \emph{(working proficiency)}, Dutch \emph{(elementary proficiency)}. Lived in \textsc{Switzerland}, \textsc{Germany}, and \textsc{Netherlands}. Can read: Old Persian Cuneiform, Avestan, Pahlavi, Cyrillic, Glagolitic, Hebrew, Greek, and Phoenician alphabets.}
+
+
+\spacedhrule{1.6em}{-0.4em}
+
+\roottitle{Interests}
+
+\inlineheadsection
+  {Non-exhaustive and in alphabetical order:}
+  {Also sprach Zarathustra, big cardinals, Chern-Simons theory, languages (formal and natural), Logisch-Philosophische Abhandlung, Luitzen Egbertus Jan Brouwer and Mathematical Philosophy of Intuitionism, Mortal Kombat (especially \acr{MKX}), Scala, Schieber Jass.}
+
+
+\end{document}
+
+＀
